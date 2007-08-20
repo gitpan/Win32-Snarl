@@ -1,9 +1,9 @@
 ---
 name: Win32-Snarl
-version: 0.01
+version: 0.02
 author:
   - 'Alan Berndt, E<lt>alan@eatabrick.orgE<gt>'
-abstract: Perl extension for blah blah blah
+abstract: Perl extension for Snarl notifications
 license: perl
 resources:
   license: http://dev.perl.org/licenses/
@@ -13,7 +13,7 @@ requires:
 provides:
   Win32::Snarl:
     file: lib/Win32/Snarl.pm
-    version: 0.01
+    version: 0.02
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

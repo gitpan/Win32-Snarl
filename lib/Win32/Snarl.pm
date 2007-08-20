@@ -6,7 +6,7 @@ use warnings;
 
 our @ISA = qw();
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Carp;
 use Win32::GUI;
@@ -259,19 +259,19 @@ __END__
 
 =head1 NAME
 
-Win32::Snarl - Perl extension for blah blah blah
+Win32::Snarl - Perl extension for Snarl notifications
 
 =head1 SYNOPSIS
 
-  use Win32::Snarl;
-  
-	Win32::Snarl::ShowMessage('Perl', 'Perl is awesome, so is Snarl.');
-	
-	my $msg_id = Win32::Snarl::ShowMessage('Time', 'The time is now ' . (scalar localtime));
-	while (Win32::Snarl::MessageIsVisible($msg_id) {
-		sleep 1;
-		Win32::Snarl::UpdateMessage($msg_id, 'Time', 'The time is no ' . (scalar localtime));
-	}
+    use Win32::Snarl;
+    
+    Win32::Snarl::ShowMessage('Perl', 'Perl is awesome, so is Snarl.');
+    
+    my $msg_id = Win32::Snarl::ShowMessage('Time', 'The time is now ' . (scalar localtime));
+    while (Win32::Snarl::IsMessageVisible($msg_id)) {
+        sleep 1;
+        Win32::Snarl::UpdateMessage($msg_id, 'Time', 'The time is now ' . (scalar localtime));
+    }
 
 =head1 DESCRIPTION
 
@@ -285,6 +285,7 @@ seem not to care about perl :'(.
 =head1 SEE ALSO
 
 C<Win32::GUI> For Windows API Calls
+
 Snarl Documentation E<lt>http://www.fullphat.net/dev/E<gt>
 
 =head1 AUTHOR
