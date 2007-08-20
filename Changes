@@ -1,0 +1,6 @@
+Revision history for Perl extension Win32::Snarl.
+
+0.01  Thu Aug 16 20:26:16 2007
+	- original version; created by h2xs 1.23 with options
+		-AX --skip-exporter --use-new-tests -n Win32::Snarl
+

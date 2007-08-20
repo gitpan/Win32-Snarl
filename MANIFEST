@@ -1,0 +1,7 @@
+Changes
+Build.PL
+MANIFEST
+README
+t/Win32-Snarl.t
+lib/Win32/Snarl.pm
+META.yml
