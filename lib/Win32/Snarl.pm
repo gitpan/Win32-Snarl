@@ -6,7 +6,7 @@ use warnings;
 
 our @ISA = qw();
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Carp;
 use Win32::GUI;
