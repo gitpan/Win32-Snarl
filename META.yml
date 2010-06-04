@@ -14,7 +14,7 @@ name: Win32-Snarl
 provides:
   Win32::Snarl:
     file: lib/Win32/Snarl.pm
-    version: 1.00
+    version: 1.01
 requires:
   Win32::GUI: 1.03
   perl: v5.8.0
